@@ -1,0 +1,18 @@
+CREATE SEQUENCE Reservation_seq 
+START WITH 1 
+INCREMENT BY 1;
+
+CREATE TABLE Reservations (
+    reservation_id NUMBER PRIMARY KEY,
+    customer_name VARCHAR2(100),
+    reservation_date DATE,
+    reservation_time VARCHAR2(100)
+);
+
+SELECT * FROM reservations;
+
+SELECT * FROM reservations WHERE customer_name = '박광호';
+
+SELECT * FROM reservations WHERE reservation_date = TO_DATE('2024-11-12');
+
+SELECT * FROM reservations WHERE reservation_id = 24;
