@@ -52,7 +52,7 @@ public class ReservationSystem extends JFrame {
 		timeField = new JTextField(20);
 		searchField = new JTextField(15);
 
-		// 버튼 추가
+
 		JButton addButton = createButton("예약 추가", e -> addReservation());
 		JButton viewButton = createButton("예약 조회", e -> viewReservations());
 		JButton cancelButton = createButton("예약 취소", e -> cancelReservation());
