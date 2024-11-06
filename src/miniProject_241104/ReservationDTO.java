@@ -14,7 +14,7 @@ public class ReservationDTO {
 		this.reservationTime = reservationTime;
 	}
 
-	// 예약 추가용 생성자 (reservationId 없이)
+	// 예약 추가용 생성자 
 	public ReservationDTO(String customerName, String reservationDate, String reservationTime) {
 		this.customerName = customerName;
 		this.reservationDate = reservationDate;
