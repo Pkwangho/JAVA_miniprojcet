@@ -21,19 +21,17 @@ public class drink {
 			System.out.print("선택 >> ");
 			String drinkName = scanner.nextLine();
 
-
 			if (drinkName.equalsIgnoreCase("그만")) {
 				System.out.println("종료합니다...");
 				break;
 			}
 
-			// 음료수 가격을 HashMap에서 조회
 			if (map.containsKey(drinkName)) {
-				// 가격 출력
+
 				int price = map.get(drinkName);
 				System.out.println(drinkName + "는 " + price + "원 입니다.");
 			} else {
-				// 음료수가 없을 경우
+
 				System.out.println("해당 음료수가 없습니다.");
 
 			}

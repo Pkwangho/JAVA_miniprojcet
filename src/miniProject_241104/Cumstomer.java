@@ -16,11 +16,10 @@ public class Cumstomer {
 		System.out.println("<< 통장 관리 프로그램입니다. >>");
 
 		while (true) {
-			// 고객 이름을 입력 받음
+
 			System.out.print("이름과 금액 입력>> ");
 			String input = scanner.nextLine();
 
-			// "exit"이 입력되면 종료
 			if (input.equalsIgnoreCase("exit")) {
 				System.out.println("프로그램을 종료합니다...");
 				break;
@@ -31,7 +30,6 @@ public class Cumstomer {
 
 			customerBalances.put(name, customerBalances.getOrDefault(name, (int) 0) + amount);
 
-			// 현재까지의 모든 고객 잔액 출력
 			StringBuilder output = new StringBuilder();
 			for (Entry<String, Integer> entry : customerBalances.entrySet()) {
 				output.append("(").append(entry.getKey()).append(">").append(entry.getValue()).append("원) ");

@@ -19,7 +19,7 @@ public class CircleArray {
 		double totalArea = 0;
 
 		for (int i = 0; i < circles.length; i++) {
-			totalArea += circles[i].getArea(); // 각 원의 면적을 더함
+			totalArea += circles[i].getArea();
 		}
 
 		System.out.printf("원의 면적 전체 합은 %.2f\n", totalArea);
